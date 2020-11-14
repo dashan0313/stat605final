@@ -1,18 +1,14 @@
-# stat605final
-UWM stat605 final group project.
+# Stat605 Final Project
+UW-Madison Stat605 final group project.
 
-# group members:
+# Group Members:
 
-jingshan huang
+* Jingshan Huang
+* Xiangyu Wang
+* Zijin Wang
+* Yicen Liu
+* Yuan Cao
 
-xiangyu wang
+# Prime Goal
 
-zijin wang
-
-yicen liu
-
-yuan cao
-
-# prime goal
-
-analyse YELP dataset
+Analyse Yelp dataset
