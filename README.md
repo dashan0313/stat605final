@@ -19,7 +19,7 @@ Analyse Yelp dataset
 
   2.split review_clean.tsv into 3 subfiles with code: split -d -n 3 review_clean.tsv
 
-  3.for each subfiles review_0x, do 'join -j 1 <(sort review_0x) <(sort business_use.tsv) > review_join_0x'
+  3.for each subfiles review_0x, do 'join -j 1 -t $'\t' <(sort review_0x) <(sort business_use.tsv) > review_join_0x'
 
   4.cat review_join_00 review_join_01 review_join_02 > review_join.tsv
 
