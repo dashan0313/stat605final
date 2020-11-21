@@ -23,6 +23,14 @@ Analyse Yelp dataset
 
   4.cat review_join_00 review_join_01 review_join_02 > review_join.tsv
 
+## change star to {1,2,3}:
+
+cat review_join.tsv | awk -F"\t" '{if ($2 < 3) $2=1}1' | awk -F"\t" '{if ($2==3) $2=2}1' | awk -F"\t" '{if ($2 > 3) $2=3}1' > review_join2.tsv
+ ">" have to direct to a new file
+
+## change year to {xxxx}:
+cat review_join2.tsv | sed 's/\t"\([[:digit:]]\{4\}\)-.*[[:digit:]]\{2\}"\t/\t\1\t/g' > review_join.tsv
+
 
 # useful tips for files in code/
 
