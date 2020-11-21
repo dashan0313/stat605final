@@ -29,7 +29,8 @@ cat review_join.tsv | awk -F"\t" '{if ($2 < 3) $2=1}1' | awk -F"\t" '{if ($2==3)
  ">" have to direct to a new file
 
 ## change year to {xxxx}:
-cat review_join2.tsv | awk -F"\t" '{print $4}' | awk -F"-" '{print $1}' | sed 's/"//' > review_join1.tsv
+cat review_join2.tsv | sed 's/"\([[:digit:]]\{4\}\)-.*"\t/\1\t/g' > review_join.tsv
+
 
 # useful tips for files in code/
 
