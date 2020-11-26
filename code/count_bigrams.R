@@ -44,8 +44,7 @@ for (i in 1:22) {
   # count
   popular_bigrams = filtered_bigrams %>% 
     count(bigram, sort = TRUE) %>%
-    slice(seq_len(10)) %>%
-    select("bigram")
+    slice(seq_len(100)) %>%
   
   write.csv(popular_bigrams, file = paste(gsub(".tsv", "_", review_file), all_category[i], "_top10.csv", sep = ""), row.names = F)
 }
