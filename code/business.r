@@ -37,7 +37,7 @@ if(summary(model_park)[[1]]$`Pr(>F)`[1]<0.05){
   }
 } else {result[2,9]="Non-significant"}
 
-noise=Noise[which(Noise$Noise!=0),]
+Noise=Noise[which(Noise$Noise!=0),]
 Noise$Noise=factor(Noise$Noise)
 model_noise=aov(star~Noise,data=Noise)
 if(summary(model_noise)[[1]]$`Pr(>F)`[1]<0.05){
@@ -49,7 +49,7 @@ if(summary(model_noise)[[1]]$`Pr(>F)`[1]<0.05){
   }
 } else {result[2,10]="Non-significant"}
 
-name=paste(args[1])
+name=args[1]
 setwd("../../output_business")
 getwd()
 write.table(result,name,col.names = FALSE, row.names = FALSE, sep = ",")
