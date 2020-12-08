@@ -1,0 +1,70 @@
+Mass Media: customer_service, credit_card, business_cards, radio_station, las_vegas, vegas_strip
+
+                           Value Std. Error     t value      p value
+customer_serviceTRUE -1.34944055 0.09891416 -13.6425417 2.236282e-42
+business_cardsTRUE    2.03757407 0.30583274   6.6623803 2.694277e-11
+las_vegasTRUE         1.20730704 0.69672280   1.7328370 8.312465e-02
+credit_cardTRUE      -2.00365267 0.33224600  -6.0306299 1.633218e-09
+1|2                  -0.58971259 0.03219764 -18.3153994 6.236766e-75
+2|3                  -0.27791903 0.03116219  -8.9184690 4.727785e-19
+3|4                  -0.01208688 0.03085162  -0.3917744 6.952249e-01
+4|5                   0.49122526 0.03179438  15.4500660 7.536628e-54
+
+## Religious: catholic_church, customer_service, holy_spirit, fish_fry, 
+# las_vegas, church_home, pad_thai
+
+                          Value Std. Error     t value       p value
+customer_serviceTRUE -0.9761417 0.22374396  -4.3627624  1.284304e-05
+las_vegasTRUE         0.2531367 0.82430957   0.3070893  7.587754e-01
+catholic_churchTRUE  -0.7246445 0.50869547  -1.4245153  1.542974e-01
+holy_spiritTRUE       0.1775378 0.84533787   0.2100199  8.336521e-01
+fish_fryTRUE         -0.5256075 0.30803618  -1.7063175  8.794898e-02
+pad_thaiTRUE         -0.1460261 0.26090519  -0.5596903  5.756907e-01
+1|2                  -2.1991690 0.04068006 -54.0601160  0.000000e+00
+2|3                  -1.8267327 0.03540228 -51.5992929  0.000000e+00
+3|4                  -1.3878062 0.03071095 -45.1892910  0.000000e+00
+4|5                  -0.6052691 0.02580191 -23.4583063 1.087525e-121
+
+customer_serviceTRUE        las_vegasTRUE  catholic_churchTRUE 
+           0.3767619            1.2880593            0.4844968 
+     holy_spiritTRUE         fish_fryTRUE         pad_thaiTRUE 
+           1.1942732            0.5911961            0.8641351 
+
+## Public Service: post_office, customer_service, minutes, parking_lot, 
+# cn_tower
+
+                           Value Std. Error      t value       p value
+customer_serviceTRUE -1.18156114 0.05072330 -23.29424675 5.070366e-120
+parking_lotTRUE       0.09134716 0.06462351   1.41352832  1.575004e-01
+minutesTRUE          -0.09660243 0.03442629  -2.80606565  5.015047e-03
+post_officeTRUE      -1.08420670 0.04221633 -25.68216125 1.849725e-145
+cn_towerTRUE          0.06453394 0.94224773   0.06848936  9.453961e-01
+1|2                  -1.39576078 0.01583935 -88.11980987  0.000000e+00
+2|3                  -1.07159424 0.01471483 -72.82412235  0.000000e+00
+3|4                  -0.61525278 0.01363144 -45.13484386  0.000000e+00
+4|5                   0.24037878 0.01319923  18.21157579  4.177484e-74
+
+customer_serviceTRUE      parking_lotTRUE          minutesTRUE 
+           0.3067994            1.0956493            0.9079169 
+     post_officeTRUE         cn_towerTRUE 
+           0.3381700            1.0666618 
+
+## Financial Service: customer_service, credit_union, minutes, 
+# checking_account, insurance, credit_card
+
+                           Value Std. Error    t value       p value
+customer_serviceTRUE -0.47404765 0.02866296 -16.538684  1.931973e-61
+minutesTRUE          -0.67417187 0.03862277 -17.455297  3.137420e-68
+credit_cardTRUE      -1.10827806 0.07340705 -15.097706  1.676645e-51
+checking_accountTRUE -0.43695762 0.08718026  -5.012117  5.383458e-07
+insuranceTRUE         0.37842904 0.03207036  11.799964  3.904791e-32
+credit_unionTRUE     -0.45598965 0.05984048  -7.620087  2.535051e-14
+1|2                  -0.51860708 0.01294629 -40.058369  0.000000e+00
+2|3                  -0.33353921 0.01275614 -26.147352 1.056276e-150
+3|4                  -0.20398030 0.01266936 -16.100283  2.539404e-58
+4|5                   0.05010049 0.01263056   3.966610  7.290215e-05
+
+customer_serviceTRUE          minutesTRUE      credit_cardTRUE 
+           0.6224776            0.5095782            0.3301269 
+checking_accountTRUE        insuranceTRUE     credit_unionTRUE 
+           0.6459988            1.4599892            0.6338204 
